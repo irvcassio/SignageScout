@@ -274,19 +274,19 @@ export const metadata: Metadata = {
 Set up the project skeleton, database, and core rendering pipeline.
 
 **Tasks:**
-- [ ] `npx create-next-app@latest SignageHub` with App Router, TypeScript, Tailwind v4, ESLint
-- [ ] Configure `postcss.config.mjs` with `@tailwindcss/postcss` (Tailwind v4)
-- [ ] Configure `app/globals.css` with `@import "tailwindcss"` and `@theme` customization
-- [ ] Set up MongoDB connection singleton in `lib/db.ts` (serverless-safe pattern with global cache, `bufferCommands: false`)
-- [ ] Create `models/Vendor.ts` Mongoose schema with all indexes
-- [ ] Create `models/Click.ts` Mongoose schema with TTL index
-- [ ] Define taxonomy constants in `types/taxonomy.ts`
-- [ ] Create `lib/vendors.ts` with `getAllVendorSlugs()`, `getVendorBySlug()`, `searchVendors()`
-- [ ] Create `scripts/seed-vendors.ts` to import from `data/vendors.json`
-- [ ] Curate initial `data/vendors.json` with 30-50 vendors (manual research, validate data)
+- [x] `npx create-next-app@latest SignageHub` with App Router, TypeScript, Tailwind v4, ESLint
+- [x] Configure `postcss.config.mjs` with `@tailwindcss/postcss` (Tailwind v4)
+- [x] Configure `app/globals.css` with `@import "tailwindcss"` and `@theme` customization
+- [x] Set up MongoDB connection singleton in `lib/db.ts` (serverless-safe pattern with global cache, `bufferCommands: false`)
+- [x] Create `models/Vendor.ts` Mongoose schema with all indexes
+- [x] Create `models/Click.ts` Mongoose schema with TTL index
+- [x] Define taxonomy constants in `types/taxonomy.ts`
+- [x] Create `lib/vendors.ts` with `getAllVendorSlugs()`, `getVendorBySlug()`, `searchVendors()`
+- [x] Create `scripts/seed-vendors.ts` to import from `data/vendors.json`
+- [x] Curate initial `data/vendors.json` with 30-50 vendors (manual research, validate data)
 - [ ] Set up Vercel project, connect repo, configure `MONGODB_URI` env var
-- [ ] Create root `app/layout.tsx` with `metadataBase`, fonts (`next/font`), Vercel Analytics
-- [ ] Create `app/robots.ts` and `app/sitemap.ts`
+- [x] Create root `app/layout.tsx` with `metadataBase`, fonts (`next/font`), Vercel Analytics
+- [x] Create `app/robots.ts` and `app/sitemap.ts`
 
 **Files:**
 ```
@@ -314,21 +314,21 @@ next.config.ts
 Build the directory browsing experience — the core product.
 
 **Tasks:**
-- [ ] Build `components/VendorCard.tsx` (server component — logo, name, tagline, categories, pricing badge)
-- [ ] Build `app/(directory)/layout.tsx` (directory shell with nav bar)
-- [ ] Build `app/(directory)/vendors/[slug]/page.tsx` with ISR, `generateStaticParams`, `generateMetadata`, JSON-LD
-- [ ] Build `components/VendorProfile.tsx` (full profile: description, features, categories, verticals, website link, related vendors)
-- [ ] Build `components/JsonLd.tsx` (reusable structured data component)
-- [ ] Build `app/(directory)/vendors/page.tsx` (SSR listing, reads `searchParams`)
-- [ ] Build `components/FilterBar.tsx` (client component — category checkboxes, vertical select, pricing filter, sort toggle)
-- [ ] Build `components/SearchInput.tsx` (client component — debounced text input, updates URL `?q=`)
-- [ ] Build `components/Pagination.tsx` (server component — link-based, 24 per page)
-- [ ] Build `app/(directory)/category/[slug]/page.tsx` with ISR, custom H1/meta per category
-- [ ] Build `app/(directory)/vertical/[slug]/page.tsx` with ISR, custom H1/meta per vertical
-- [ ] Build `app/go/[slug]/route.ts` (affiliate redirect — log click to `clicks` collection, redirect to `affiliateUrl || websiteUrl`)
-- [ ] Build `lib/clicks.ts` with `logClick()` function
+- [x] Build `components/VendorCard.tsx` (server component — logo, name, tagline, categories, pricing badge)
+- [x] Build `app/(directory)/layout.tsx` (directory shell with nav bar)
+- [x] Build `app/(directory)/vendors/[slug]/page.tsx` with ISR, `generateStaticParams`, `generateMetadata`, JSON-LD
+- [x] Build `components/VendorProfile.tsx` (full profile: description, features, categories, verticals, website link, related vendors)
+- [x] Build `components/JsonLd.tsx` (reusable structured data component)
+- [x] Build `app/(directory)/vendors/page.tsx` (SSR listing, reads `searchParams`)
+- [x] Build `components/FilterBar.tsx` (client component — category checkboxes, vertical select, pricing filter, sort toggle)
+- [x] Build `components/SearchInput.tsx` (client component — debounced text input, updates URL `?q=`)
+- [x] Build `components/Pagination.tsx` (server component — link-based, 24 per page)
+- [x] Build `app/(directory)/category/[slug]/page.tsx` with ISR, custom H1/meta per category
+- [x] Build `app/(directory)/vertical/[slug]/page.tsx` with ISR, custom H1/meta per vertical
+- [x] Build `app/go/[slug]/route.ts` (affiliate redirect — log click to `clicks` collection, redirect to `affiliateUrl || websiteUrl`)
+- [x] Build `lib/clicks.ts` with `logClick()` function
 - [ ] Build `app/(directory)/vendors/[slug]/opengraph-image.tsx` (dynamic OG image per vendor)
-- [ ] Wire up related vendors on profile page (same primary category, shared verticals, max 4)
+- [x] Wire up related vendors on profile page (same primary category, shared verticals, max 4)
 
 **Files:**
 ```
@@ -355,21 +355,21 @@ lib/clicks.ts
 Build the homepage and editorial content layer — the SEO engine.
 
 **Tasks:**
-- [ ] Build `app/page.tsx` (homepage — hero search bar, category grid, featured vendors, recent articles)
-- [ ] Build `components/CategoryGrid.tsx` (6 category cards with icons and vendor counts)
-- [ ] Build `components/FeaturedVendors.tsx` (top 6 featured vendors, visually distinct section)
-- [ ] Install `@next/mdx`, `@mdx-js/loader`, `@mdx-js/react`, `remark-gfm`
-- [ ] Configure `next.config.ts` with MDX support (`createMDX` wrapper, `pageExtensions`)
-- [ ] Create `app/(content)/layout.tsx` (prose container, article nav)
-- [ ] Create `app/(content)/guides/[slug]/page.tsx` with `generateStaticParams`, `generateMetadata`, Article JSON-LD
-- [ ] Write 5 initial MDX articles:
+- [x] Build `app/page.tsx` (homepage — hero search bar, category grid, featured vendors, recent articles)
+- [x] Build `components/CategoryGrid.tsx` (6 category cards with icons and vendor counts)
+- [x] Build `components/FeaturedVendors.tsx` (top 6 featured vendors, visually distinct section)
+- [x] Install `@next/mdx`, `@mdx-js/loader`, `@mdx-js/react`, `remark-gfm`
+- [x] Configure `next.config.ts` with MDX support (`createMDX` wrapper, `pageExtensions`)
+- [x] Create `app/(content)/layout.tsx` (prose container, article nav)
+- [x] Create `app/(content)/guides/[slug]/page.tsx` with `generateStaticParams`, `generateMetadata`, Article JSON-LD
+- [x] Write 5 initial MDX articles:
   - `content/guides/best-digital-signage-software-2026.mdx`
   - `content/guides/digital-signage-for-retail.mdx`
   - `content/guides/digital-signage-hardware-comparison.mdx`
   - `content/guides/what-is-digital-signage.mdx`
   - `content/guides/digital-signage-cost-guide.mdx`
-- [ ] Each article exports `metadata` (title, description, publishedAt, tags) and links to relevant vendor profiles
-- [ ] Add article listing to homepage (3 most recent)
+- [x] Each article exports `metadata` (title, description, publishedAt, tags) and links to relevant vendor profiles
+- [x] Add article listing to homepage (3 most recent)
 
 **Files:**
 ```
