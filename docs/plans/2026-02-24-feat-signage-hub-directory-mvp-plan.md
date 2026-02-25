@@ -395,12 +395,12 @@ Scale from 50 to 200+ vendors and polish the UX.
 - [ ] Download/process vendor logos → optimize with sharp, store in `public/logos/` or upload to Cloudinary
 - [ ] Configure `next.config.ts` `images.remotePatterns` for logo hosting
 - [ ] Add responsive design polish — mobile filter bottom sheet, card grid breakpoints
-- [ ] Add empty state / zero results component
-- [ ] Add "About SignageHub" page with editorial policy (trust signal)
+- [x] Add empty state / zero results component
+- [x] Add "About SignageHub" page with editorial policy (trust signal)
 - [ ] Set up Plausible or Umami analytics (self-hosted or cloud)
 - [ ] Performance audit: Lighthouse 90+ on all Core Web Vitals
 - [ ] Test all flows: search → filter → profile → affiliate redirect → back (filter state preserved)
-- [ ] Write 5 more MDX articles (total 10)
+- [x] Write 5 more MDX articles (total 10)
 
 **Files:**
 ```
@@ -432,7 +432,7 @@ Add the revenue infrastructure.
 - [ ] Submit sitemap to Google Search Console
 - [ ] Set up Google Search Console monitoring
 - [ ] Add newsletter signup (Buttondown or ConvertKit) — footer CTA + article bottom CTA
-- [ ] Set up `app/api/revalidate/route.ts` webhook for on-demand ISR
+- [x] Set up `app/api/revalidate/route.ts` webhook for on-demand ISR
 
 **Files:**
 ```

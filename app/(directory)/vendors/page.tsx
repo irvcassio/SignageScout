@@ -5,6 +5,7 @@ import VendorCard from "@/components/VendorCard"
 import FilterBar from "@/components/FilterBar"
 import SearchInput from "@/components/SearchInput"
 import Pagination from "@/components/Pagination"
+import EmptyState from "@/components/EmptyState"
 
 export const metadata: Metadata = {
   title: "Digital Signage Directory",
@@ -64,12 +65,7 @@ export default async function VendorsPage({
 
         <div className="flex-1">
           {vendors.length === 0 ? (
-            <div className="text-center py-16">
-              <p className="text-lg text-muted">No vendors found matching your criteria.</p>
-              <p className="text-sm text-muted mt-2">
-                Try adjusting your filters or search terms.
-              </p>
-            </div>
+            <EmptyState />
           ) : (
             <>
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">

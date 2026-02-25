@@ -1,0 +1,134 @@
+export const metadata = {
+  title: "Open Source Digital Signage Software in 2026",
+  description: "The best open source digital signage CMS platforms. Compare Xibo, Concerto, PiSignage, and other free alternatives to commercial platforms.",
+  publishedAt: "2026-02-28",
+  tags: ["open-source", "software", "free"],
+}
+
+Open source digital signage software offers a free alternative to commercial CMS platforms. For organizations with technical staff and tight budgets, self-hosted open source solutions provide full control over data, customization, and long-term costs.
+
+## When Open Source Makes Sense
+
+**Good fit:**
+- You have in-house IT staff comfortable with server administration
+- Budget constraints prevent commercial software subscriptions
+- You need deep customization not available in commercial platforms
+- Data sovereignty requirements prevent using cloud-hosted services
+- Small deployments (1-20 screens) where commercial per-screen pricing adds up
+
+**Not a good fit:**
+- No technical staff for setup and maintenance
+- Need vendor support and SLAs
+- Large deployments where reliability is critical
+- Need turnkey setup with minimal configuration
+- Time-to-deploy is more important than cost savings
+
+## Top Open Source Platforms
+
+### Xibo
+
+The most popular open source digital signage CMS. Xibo offers a Docker-based server with a web-based management interface and dedicated player applications for Windows, Linux, Android, and Tizen (Samsung SoC).
+
+**Strengths:**
+- Mature project (10+ years of development)
+- Active community with forums and documentation
+- Layout designer with drag-and-drop editor
+- Scheduling, playlists, and campaign management
+- DataSet integration for dynamic data displays
+- Optional commercial cloud hosting available
+
+**Limitations:**
+- Self-hosted setup requires Docker and a Linux server
+- Player apps need configuration per device
+- Learning curve for first-time users
+- Community support only (unless you pay for commercial tier)
+
+**Cost:** Free (self-hosted). Commercial cloud hosting starts at approximately $15/month per display.
+
+### Concerto
+
+Developed at RPI (Rensselaer Polytechnic Institute), Concerto is designed for campus and community environments. It uses a web-based content management system with a modular plugin architecture.
+
+**Strengths:**
+- Designed for multi-user environments (departments submit content)
+- Content approval workflows
+- Plugin system for extensibility
+- Simple web-based setup
+
+**Limitations:**
+- Smaller community than Xibo
+- Fewer player platform options
+- Less active development in recent years
+- Limited commercial display support
+
+**Cost:** Free (self-hosted).
+
+### PiSignage
+
+Built specifically for Raspberry Pi, PiSignage offers a lightweight player that runs on $75 hardware. The server component can be self-hosted or cloud-hosted.
+
+**Strengths:**
+- Optimized for Raspberry Pi (low-cost hardware)
+- Simple setup — flash SD card and connect
+- Group management for multiple players
+- Cloud dashboard available (free for 2 players)
+
+**Limitations:**
+- Limited to Raspberry Pi hardware
+- Fewer layout and design options than Xibo
+- Not suitable for complex interactive content
+- Limited integrations
+
+**Cost:** Free (self-hosted, up to 2 players cloud). Cloud plans start at $5/player/month.
+
+### Anthias (formerly Screenly OSE)
+
+Anthias is the open source version of Screenly, designed for Raspberry Pi. It provides a simple web interface for managing content on a single player.
+
+**Strengths:**
+- Extremely simple setup — one command install
+- Lightweight and reliable
+- Good for single-screen deployments
+- Active development
+
+**Limitations:**
+- Single-player management (not multi-screen)
+- No centralized management for multiple devices
+- Limited scheduling and playlist features
+- Basic content support (images, video, web pages)
+
+**Cost:** Free.
+
+## Open Source vs Commercial: Total Cost Comparison
+
+| Factor | Open Source (Xibo, self-hosted) | Commercial ([Yodeck](/vendors/yodeck), cloud) |
+|--------|-------------------------------|----------------------------------------------|
+| Software license | Free | $8-20/screen/month |
+| Server hosting | $5-20/month (VPS) | Included |
+| Setup time | 4-8 hours | 30 minutes |
+| Maintenance | You (updates, backups, security) | Vendor handles everything |
+| Support | Community forums | Email, phone, SLA |
+| Player hardware | Raspberry Pi ($75) or Linux PC | Raspberry Pi ($75) |
+| 10-screen annual cost | $60-240 (hosting only) | $960-2,400 |
+
+**The hidden cost of open source is time.** If your IT team spends 4 hours per month maintaining the signage server, that is staff cost that does not appear in the software budget.
+
+## Hybrid Approach
+
+Many organizations start with open source and migrate to commercial as they scale:
+
+1. **Test with open source** — Validate the use case with Xibo or PiSignage on 1-5 screens
+2. **Prove ROI** — Demonstrate value to stakeholders with minimal investment
+3. **Migrate to commercial** — When scaling to 20+ screens, switch to [Rise Vision](/vendors/rise-vision) (free tier), [Yodeck](/vendors/yodeck), or [ScreenCloud](/vendors/screencloud) for managed reliability
+
+## Getting Started with Open Source
+
+1. Choose your platform — Xibo for multi-screen, PiSignage for Raspberry Pi simplicity
+2. Set up a server — Docker on a Linux VPS ($5-10/month on DigitalOcean or Hetzner)
+3. Flash your first player — Raspberry Pi with the platform's player image
+4. Create and schedule content — Test with basic images and videos
+5. Evaluate after 30 days — Is the maintenance burden acceptable? Consider commercial alternatives if not.
+
+## Next Steps
+
+If open source is not the right fit, [compare commercial CMS platforms](/guides/best-digital-signage-software-2026) in our software comparison guide. For budget-conscious deployments, [Rise Vision](/vendors/rise-vision) and [Yodeck](/vendors/yodeck) offer free tiers that rival open source simplicity.
