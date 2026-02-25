@@ -389,7 +389,7 @@ next.config.ts (updated with MDX)
 Scale from 50 to 200+ vendors and polish the UX.
 
 **Tasks:**
-- [ ] Research and curate vendor data for remaining 150-250 vendors (scrape from Digital Signage Today vendor list, company websites, press releases)
+- [x] Research and curate vendor data for remaining 150-250 vendors (scrape from Digital Signage Today vendor list, company websites, press releases)
 - [ ] Build `scripts/scrape-vendors.ts` — scrape public vendor info into standardized JSON format
 - [ ] Validate and clean all vendor data (descriptions, correct categories, working URLs, logos)
 - [ ] Download/process vendor logos → optimize with sharp, store in `public/logos/` or upload to Cloudinary
