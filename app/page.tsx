@@ -25,7 +25,7 @@ export default async function Home() {
       <header className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-xl font-bold text-primary">
-            SignageHub
+            SignageScout
           </Link>
           <nav className="flex items-center gap-6 text-sm">
             <Link
@@ -165,7 +165,7 @@ export default async function Home() {
             Are You a Digital Signage Vendor?
           </h2>
           <p className="mt-3 text-muted max-w-lg mx-auto">
-            Get listed in the SignageHub directory and reach thousands of buyers
+            Get listed in the SignageScout directory and reach thousands of buyers
             searching for digital signage solutions.
           </p>
           <Link
@@ -180,7 +180,7 @@ export default async function Home() {
       {/* Footer */}
       <footer className="border-t border-border mt-16">
         <div className="mx-auto max-w-6xl px-4 py-8 text-center text-sm text-muted">
-          <p>SignageHub — The digital signage industry directory</p>
+          <p>SignageScout — The digital signage industry directory</p>
         </div>
       </footer>
     </div>

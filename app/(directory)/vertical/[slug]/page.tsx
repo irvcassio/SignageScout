@@ -58,7 +58,7 @@ export default async function VerticalPage({
       "@type": "ListItem",
       position: i + 1,
       name: v.name,
-      url: `https://signagehub.com/vendors/${v.slug}`,
+      url: `https://signagescout.com/vendors/${v.slug}`,
     })),
   }
 

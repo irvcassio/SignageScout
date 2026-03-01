@@ -59,8 +59,8 @@ export default async function GuidePage({
     datePublished: metadata.publishedAt,
     publisher: {
       "@type": "Organization",
-      name: "SignageHub",
-      url: "https://signagehub.com",
+      name: "SignageScout",
+      url: "https://signagescout.com",
     },
   }
 

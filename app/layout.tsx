@@ -9,16 +9,16 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_SITE_URL || "https://signagehub.com"
+    process.env.NEXT_PUBLIC_SITE_URL || "https://signagescout.com"
   ),
   title: {
-    default: "SignageHub | Digital Signage Directory",
-    template: "%s | SignageHub",
+    default: "SignageScout | Digital Signage Directory",
+    template: "%s | SignageScout",
   },
   description:
     "Find and compare the best digital signage software, hardware, and service providers. The curated directory for the digital signage industry.",
   openGraph: {
-    siteName: "SignageHub",
+    siteName: "SignageScout",
     type: "website",
   },
 }

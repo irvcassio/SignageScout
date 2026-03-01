@@ -10,7 +10,7 @@ export default function DirectoryLayout({
       <header className="border-b border-border">
         <div className="mx-auto max-w-7xl px-4 py-4 flex items-center justify-between">
           <Link href="/" className="text-xl font-bold text-primary">
-            SignageHub
+            SignageScout
           </Link>
           <nav className="flex items-center gap-6 text-sm">
             <Link
