@@ -108,7 +108,7 @@ export default async function Home() {
               <Link
                 key={v.slug}
                 href={`/vertical/${v.slug}`}
-                className="rounded-xl border border-border bg-white p-4 hover:shadow-md hover:border-primary/30 transition-all text-center"
+                className="rounded-xl border border-border bg-surface p-4 hover:shadow-md hover:border-primary/30 transition-all text-center"
               >
                 <span className="font-medium text-sm">{v.name}</span>
                 <p className="text-xs text-muted mt-1">{v.description}</p>
@@ -134,7 +134,7 @@ export default async function Home() {
                 <Link
                   key={guide.slug}
                   href={`/guides/${guide.slug}`}
-                  className="group rounded-xl border border-border bg-white p-5 hover:shadow-md transition-all"
+                  className="group rounded-xl border border-border bg-surface p-5 hover:shadow-md transition-all"
                 >
                   <h3 className="font-semibold text-foreground group-hover:text-primary">
                     {guide.meta.title}
@@ -169,7 +169,7 @@ export default async function Home() {
             searching for digital signage solutions.
           </p>
           <Link
-            href="/vendors"
+            href="/vendors/claim"
             className="mt-6 inline-flex items-center rounded-lg bg-primary px-6 py-3 text-white font-medium hover:bg-primary-dark transition-colors"
           >
             Claim Your Listing

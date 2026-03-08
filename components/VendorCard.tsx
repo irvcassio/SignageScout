@@ -4,11 +4,11 @@ import type { IVendor } from "@/types/vendor"
 function PricingBadge({ model }: { model: string | null }) {
   if (!model) return null
   const colors: Record<string, string> = {
-    free: "bg-green-100 text-green-700",
-    freemium: "bg-blue-100 text-blue-700",
-    paid: "bg-gray-100 text-gray-700",
-    enterprise: "bg-purple-100 text-purple-700",
-    contact: "bg-amber-100 text-amber-700",
+    free: "bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300",
+    freemium: "bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300",
+    paid: "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300",
+    enterprise: "bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300",
+    contact: "bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300",
   }
   const labels: Record<string, string> = {
     free: "Free",
@@ -19,7 +19,7 @@ function PricingBadge({ model }: { model: string | null }) {
   }
   return (
     <span
-      className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${colors[model] ?? "bg-gray-100 text-gray-700"}`}
+      className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${colors[model] ?? "bg-gray-100 text-gray-700 dark:bg-gray-800 dark:text-gray-300"}`}
     >
       {labels[model] ?? model}
     </span>
@@ -45,7 +45,7 @@ export default function VendorCard({ vendor }: { vendor: IVendor }) {
   return (
     <Link
       href={`/vendors/${vendor.slug}`}
-      className="group flex flex-col rounded-xl border border-border bg-white p-5 transition hover:shadow-md"
+      className="group flex flex-col rounded-xl border border-border bg-surface p-5 transition hover:shadow-md"
     >
       <div className="flex items-start gap-3">
         <VendorInitials name={vendor.name} />
@@ -58,7 +58,7 @@ export default function VendorCard({ vendor }: { vendor: IVendor }) {
           )}
         </div>
         {vendor.featured && (
-          <span className="ml-auto shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-700">
+          <span className="ml-auto shrink-0 rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">
             Featured
           </span>
         )}

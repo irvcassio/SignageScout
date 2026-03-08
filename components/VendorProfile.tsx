@@ -44,17 +44,17 @@ export default function VendorProfile({
           )}
           <div className="flex flex-wrap gap-2 mt-3">
             {vendor.featured && (
-              <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-700">
+              <span className="rounded-full bg-amber-100 px-3 py-1 text-xs font-medium text-amber-700 dark:bg-amber-900/40 dark:text-amber-300">
                 Featured
               </span>
             )}
             {vendor.verified && (
-              <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700">
+              <span className="rounded-full bg-green-100 px-3 py-1 text-xs font-medium text-green-700 dark:bg-green-900/40 dark:text-green-300">
                 Verified
               </span>
             )}
             {vendor.pricingModel && (
-              <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700">
+              <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-700 dark:bg-gray-800 dark:text-gray-300">
                 {pricingLabels[vendor.pricingModel] ?? vendor.pricingModel}
               </span>
             )}

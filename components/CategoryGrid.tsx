@@ -14,7 +14,7 @@ function CategoryCard({ item }: { item: TaxonomyItem }) {
   return (
     <Link
       href={`/category/${item.slug}`}
-      className="group rounded-xl border border-border bg-white p-5 hover:shadow-md transition-all hover:border-primary/30"
+      className="group rounded-xl border border-border bg-surface p-5 hover:shadow-md transition-all hover:border-primary/30"
     >
       <div className="text-2xl mb-3">{iconMap[item.icon] ?? "📁"}</div>
       <h3 className="font-semibold text-foreground group-hover:text-primary">
