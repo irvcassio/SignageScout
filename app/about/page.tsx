@@ -77,8 +77,14 @@ export default function AboutPage() {
 
           <h2 className="text-xl font-semibold mt-8">Contact</h2>
           <p>
-            Have a question, correction, or want to claim your vendor profile?
-            Email us at{" "}
+            Have a question, correction, or want to{" "}
+            <Link
+              href="/vendors/claim"
+              className="text-primary hover:underline"
+            >
+              claim your vendor profile
+            </Link>
+            ? Email us at{" "}
             <a
               href="mailto:hello@signagescout.com"
               className="text-primary hover:underline"
